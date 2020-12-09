@@ -1,0 +1,285 @@
+[
+    {
+        "id": "a24619a2.4b2468",
+        "type": "tab",
+        "label": "流程1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "cf4313b2.34b9b",
+        "type": "rpi-gpio in",
+        "z": "a24619a2.4b2468",
+        "name": "",
+        "pin": "7",
+        "intype": "up",
+        "debounce": "25",
+        "read": true,
+        "x": 150,
+        "y": 260,
+        "wires": [
+            [
+                "549e7158.c3f3b",
+                "c81fbfe.758294"
+            ]
+        ]
+    },
+    {
+        "id": "549e7158.c3f3b",
+        "type": "debug",
+        "z": "a24619a2.4b2468",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 420,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "c81fbfe.758294",
+        "type": "switch",
+        "z": "a24619a2.4b2468",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 380,
+        "y": 280,
+        "wires": [
+            [
+                "91382763.3d3248"
+            ],
+            [
+                "b4b86d47.a6b3b"
+            ]
+        ]
+    },
+    {
+        "id": "91382763.3d3248",
+        "type": "change",
+        "z": "a24619a2.4b2468",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 240,
+        "wires": [
+            [
+                "69c6a6c5.282398"
+            ]
+        ]
+    },
+    {
+        "id": "b4b86d47.a6b3b",
+        "type": "change",
+        "z": "a24619a2.4b2468",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 340,
+        "wires": [
+            [
+                "69c6a6c5.282398"
+            ]
+        ]
+    },
+    {
+        "id": "69c6a6c5.282398",
+        "type": "rpi-gpio out",
+        "z": "a24619a2.4b2468",
+        "name": "",
+        "pin": "11",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 730,
+        "y": 280,
+        "wires": []
+    }
+][
+    {
+        "id": "a24619a2.4b2468",
+        "type": "tab",
+        "label": "流程1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "cf4313b2.34b9b",
+        "type": "rpi-gpio in",
+        "z": "a24619a2.4b2468",
+        "name": "",
+        "pin": "7",
+        "intype": "up",
+        "debounce": "25",
+        "read": true,
+        "x": 150,
+        "y": 260,
+        "wires": [
+            [
+                "549e7158.c3f3b",
+                "c81fbfe.758294"
+            ]
+        ]
+    },
+    {
+        "id": "549e7158.c3f3b",
+        "type": "debug",
+        "z": "a24619a2.4b2468",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 420,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "c81fbfe.758294",
+        "type": "switch",
+        "z": "a24619a2.4b2468",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 380,
+        "y": 280,
+        "wires": [
+            [
+                "91382763.3d3248"
+            ],
+            [
+                "b4b86d47.a6b3b"
+            ]
+        ]
+    },
+    {
+        "id": "91382763.3d3248",
+        "type": "change",
+        "z": "a24619a2.4b2468",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 240,
+        "wires": [
+            [
+                "69c6a6c5.282398"
+            ]
+        ]
+    },
+    {
+        "id": "b4b86d47.a6b3b",
+        "type": "change",
+        "z": "a24619a2.4b2468",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 340,
+        "wires": [
+            [
+                "69c6a6c5.282398"
+            ]
+        ]
+    },
+    {
+        "id": "69c6a6c5.282398",
+        "type": "rpi-gpio out",
+        "z": "a24619a2.4b2468",
+        "name": "",
+        "pin": "11",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 730,
+        "y": 280,
+        "wires": []
+    }
+]
