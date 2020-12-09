@@ -1,0 +1,22 @@
+[
+    {
+        "id": "d6e2cd35.83e23",
+        "type": "inject",
+        "z": "a24619a2.4b2468",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "x": 210,
+        "y": 80,
+        "wires": [
+            [
+                "6646dcb9.5c9244"
+            ]
+        ]
+    }
+]
